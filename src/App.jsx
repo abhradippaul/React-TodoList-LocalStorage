@@ -46,6 +46,10 @@ function App() {
       localStorage.setItem("todo", JSON.stringify(todoArr));
       // console.log(todoArr)
     }
+    else {
+      console.log(todoArr)
+      localStorage.clear()
+    }
   }, [todoArr]);
 
   // console.log(todoArr)
